@@ -1,0 +1,74 @@
+$primary-color: red;
+$secondary-color: rgb(2, 165, 16);
+$width: 400px;
+
+body {
+    background-color: $primary-color;
+}
+
+.container {
+    background-color: $primary-color;
+    width: $width;
+    & .inputbar {
+       background-color: hotpink;
+       & input {
+           background-color: white;
+           color: $primary-color;
+           width: 55%;
+           height: 40px;
+           border: 0; 
+           padding-left: 20px;
+        }
+    & button {
+           background-color: $primary-color;
+           color: white;
+           border: 0;
+           width: 39%;
+           height: 40px;
+       }
+    }
+    & ul {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            height: 40px;
+            margin: 1px ;
+            & p {
+                width: 30%;
+            }
+            & li {
+                display: flex;
+                flex-direction: column;
+                
+                width: 80%;
+                height: 60px;
+                list-style-type: none;
+                padding: 3px 40px 3px 10px;
+            } 
+            & .task {
+            width: 80px;
+            align-items: flex-end;
+            }
+            & .icons {
+                width: 80px;
+                align-items: flex-end;
+                }
+            & #check {
+                    color:blue;
+                    font-size: 18px;
+                    padding-right: 5px;
+                    text-align: right;
+                }
+            & #pencil {
+                    color:green;
+                    font-size: 18px;
+                    padding-right: 5px;
+                }
+            & #trash {
+                    color:red;
+                   font-size: 18px;
+                    padding-right: 5px;
+                }
+            }
+            
+        }
